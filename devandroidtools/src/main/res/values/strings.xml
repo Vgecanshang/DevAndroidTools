@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_rv_footer_end">已全部加载完成</string>
+    <string name="str_rv_footer_loading">正在加载中..</string>
+    <string name="str_rv_footer_net_error">点击重新加载</string>
+    <string name="str_no_data_normal">暂无数据</string>
+
+    <string name="str_load_data_net_error">网络异常，请点击屏幕重试</string>
+    <string name="str_load_data_nothing">暂无数据</string>
+
+</resources>

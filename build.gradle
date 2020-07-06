@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+
+    isDebug = "true"////是否输出LOG信息
+    minSdkVersion = 21
+    compileSdkVersion = 29
+    targetSdkVersion = compileSdkVersion
+    rxJava = 'io.reactivex.rxjava2:rxjava:2.1.16'
+    glide = 'com.github.bumptech.glide:glide:4.11.0'
+    glideProcessor = 'com.github.bumptech.glide:compiler:4.11.0'
+    recyclerView = 'androidx.recyclerview:recyclerview:1.1.0'
+    paging = 'androidx.paging:paging-runtime:2.1.2'
+
+    developerId = 'Vgecanshang'
+    developerName = 'Vgecanshang CY'
+    developerEmail = '469319936@qq.com'
+}
+

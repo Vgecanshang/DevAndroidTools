@@ -1,0 +1,3 @@
+rootProject.name='DevAndroidTools'
+include ':app'
+include ':devandroidtools'
